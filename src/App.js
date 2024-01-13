@@ -8,7 +8,7 @@ export const App = () => {
   const [num1, setNum1] = useState("");
   const [num2, setNum2] = useState("");
   const [resultMessage, setResultMessage] = useState(false);
-  const [result, setresult] = useState("Input the Numbers");
+  const [result, setresult] = useState("Please input the numbers.");
 
   // function to change state of inputs
   function handleInputt(e, inputType) {
@@ -70,12 +70,11 @@ export const App = () => {
       />
 
       <div id="resultDiv">
-        {resultMessage ? (
-          <h1 id="green">😊 Success!</h1>
+        {result === "Please input the numbers." ? null : !resultMessage ? (
+          <h1 id="red">🙁 Error!.</h1>
         ) : (
-          <h1 id="red">🙁 Error!</h1>
+          <h1 id="green">😊 Success!.</h1>
         )}
-
         <h2>{result}</h2>
       </div>
     </div>
