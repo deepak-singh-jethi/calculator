@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#mainConatiner{
+    height: 480px;
+    width: 480px;
+    padding: 50px;
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+
+    box-shadow: -25px 25px 70px rgba(224, 12, 12, 0.5),25px -25px 70px rgba(4, 34, 182, 0.5);
+    ;
+    border-radius: 40px;
+    
+    
+}
+input{
+    width: 250px;
+    padding: 8px;
+    font-size: 20px;
+   
+}
+
+#buttonsConatiner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+#buttonsConatiner button{
+    font-size: 25px;
+     width: 40px;
+     height: 40px;
+     background-color: black;
+     color: white;
+     border: none;
+}
+#green{
+    color: green;
+    font-size: 27px;
+}
+
+#red{
+    color: red;
+    font-size: 27px;
+}
+
+#resultDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  text-align: center;
 }
