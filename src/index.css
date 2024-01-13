@@ -31,10 +31,15 @@ box-sizing: border-box;
     
 }
 input{
+    cursor: pointer;
     width: 250px;
     padding: 8px;
     font-size: 20px;
    
+}
+
+input:focus{
+    outline: none;
 }
 
 #buttonsConatiner{
@@ -70,6 +75,7 @@ input{
 }
 
 button{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
