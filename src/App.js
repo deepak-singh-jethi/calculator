@@ -47,7 +47,7 @@ export const App = () => {
   }
 
   return (
-    <div id="mainConatiner">
+    <div id="mainContainer">
       <h1>React Calculator</h1>
       <FormInput
         placeHolder="Num 1"
@@ -71,9 +71,9 @@ export const App = () => {
 
       <div id="resultDiv">
         {resultMessage ? (
-          <h1 id="green">😊 Success..🚀</h1>
+          <h1 id="green">😊 Success!</h1>
         ) : (
-          <h1 id="red">🙁 Error.. ❌</h1>
+          <h1 id="red">🙁 Error!</h1>
         )}
 
         <h2>{result}</h2>

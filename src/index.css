@@ -13,9 +13,9 @@ box-sizing: border-box;
     width: 100vw;
 }
 
-#mainConatiner{
-    height: 480px;
-    width: 480px;
+#mainContainer{
+    height: 470px;
+    width: 450px;
     padding: 50px;
     background-color: rgb(180, 180, 180);
     display: flex;
@@ -27,8 +27,14 @@ box-sizing: border-box;
     box-shadow: -25px 25px 70px rgba(224, 12, 12, 0.5),25px -25px 70px rgba(4, 34, 182, 0.5);
     ;
     border-radius: 40px;
-    
-    
+
+}
+
+#mainContainer>h1{
+    font-size: 30px;
+    background: -webkit-linear-gradient(#0418f3, #ff04a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 input{
     cursor: pointer;
@@ -55,6 +61,7 @@ input:focus{
      background-color: black;
      color: white;
      border: none;
+     cursor: pointer;
 }
 #green{
     color: green;
@@ -74,10 +81,44 @@ input:focus{
     gap: 20px;
 }
 
-button{
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  text-align: center;
+
+
+@media only screen and (max-width:520px){
+#mainContainer {
+        height: 430px;
+        width: 300px;
+        padding: 20px;
+}
+#mainContainer>h1 {
+    font-size: 25px;
+}
+
+input {
+ 
+    width: 220px;
+    padding: 5px;
+    font-size: 17px;
+
+}
+
+#buttonsConatiner {
+
+    gap: 20px;
+}
+
+#buttonsConatiner button {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+}
+#green, #red {
+    font-size: 22px;
+}
+#resultDiv h1{
+    font-size: 23px;
+}
+#resultDiv h2 {
+    font-size: 20px;
+}
+
 }
